@@ -1,9 +1,10 @@
 import Image from "next/image";
 import ArticleList from "./components/ArticleList";
+import { getAllArticles } from "@/blogApi";
 // import { getAllArticles } from "@/pages/api/blogAPI";
 
 export default async function Home() {
-  // const articles = await getAllArticles();
+  const articles = await getAllArticles();
   // console.log(articles);
   // const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
@@ -14,7 +15,7 @@ export default async function Home() {
   return (
     <div className="md:flex">
       <section className="w-full md:w-2/3 flex flex-col items-center px-3">
-        <ArticleList />
+        <ArticleList articles={articles} />
         <div className="flex items-center py-8">
           <a
             href="#"
