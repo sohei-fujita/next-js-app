@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ArticleList from "./components/ArticleList";
 import { getAllArticles } from "@/blogApi";
+import { useEffect } from "react";
 // import { getAllArticles } from "@/pages/api/blogAPI";
 
 export default async function Home() {
