@@ -1,7 +1,12 @@
+import { getDetailArticle } from "@/blogApi";
 import Image from "next/image";
 import React from "react";
 
-const Article = ({ params }: { params: { id: string } }) => {
+const Article = async ({ params }: { params: { id: string } }) => {
+  const detailArticle = await getDetailArticle(params.id);
+
+  console.log(detailArticle);
+
   console.log(params.id);
   return (
     <div className="max-w-3x1 mx-auto p-5">
