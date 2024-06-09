@@ -17,6 +17,16 @@
       "title": "next.js13の練習-3",
       "content": "ダミーテキストとして用意されています。ページレイアウトやフォントサイズの確認用に最適です。テキストデザインの参考にどうぞ。",
       "createdAt": "2024/07/01"
+    },
+    {
+      "id": "next-test",
+      "title": "test",
+      "content": "awaitawait"
+    },
+    {
+      "id": "test",
+      "title": "test",
+      "content": "redirect"
     }
   ]
 }
